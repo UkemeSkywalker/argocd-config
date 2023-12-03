@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: jubril-app
+      app: schnider-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: jubril-app
+        app: schnider-app
     spec:
       containers:
-      - name: jubril-app-pods
+      - name: schnider-app-pods
         image: nanajanashia/argocd-app:1.1
         ports:
         - containerPort: 8080
